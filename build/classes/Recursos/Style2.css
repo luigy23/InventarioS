@@ -1,0 +1,87 @@
+
+
+
+
+
+
+
+
+
+
+
+
+/*  AQUI VA EL STYLE 2 */
+.combo-box{
+
+    -fx-font-family: consolas;
+    -fx-font-size: 16;
+
+
+}
+
+
+
+
+#BotonGuardar{
+
+    -fx-background-color:  #F2DB66;
+    -fx-font-family: consolas;
+    -fx-font-size: 20;
+   
+    -fxfcolor:#FDFFFC;
+
+}
+#BotonGuardar:hover{
+    -fx-background-color:  #FF9F1C;
+    -fx-text-fill: #FDFFFC;
+
+
+
+
+
+}
+
+.button{
+
+    -fx-background-color:  #4580d8;
+    -fx-font-family: consolas;
+    -fx-font-size: 20;
+   
+    -fx-color:#FDFFFC;
+
+
+}
+
+TextField{
+
+    -fx-color: #E5FCF5 ;
+    -fx-text-fill: #E5FCF5;
+    
+    
+    -fx-background-color: #00c58a00;
+    -fx-font-family: consolas;
+    -fx-font-size: 22;
+    
+    
+    -fx-border-style: solid;
+    -fx-border-color:#E5FCF5;
+    -fx-border-width: 0px 0px 4px 0px;
+    
+    
+    }
+    #CB_Cantidad{
+        -fx-color: #E5FCF5 ;
+        -fx-text-fill: #E5FCF5;
+        
+        
+        
+        -fx-font-family: consolas;
+        -fx-font-size: 22;
+        
+        
+        -fx-border-style: solid;
+        -fx-border-color:#E5FCF5;
+        -fx-border-width: 0px 0px 4px 0px;
+
+    }
+ 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="498.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.NuevoProductoController">
+   <children>
+      <Pane layoutX="61.0" layoutY="88.0" prefHeight="498.0" prefWidth="665.0" style="-fx-background-color: #0E2226;" stylesheets="@../Recursos/Style3.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="40.0" layoutY="89.0" styleClass="Lproductos" text="Id:" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="356.0" layoutY="89.0" styleClass="LabelProducto" text="Stock:" textFill="WHITE" />
+            <Label layoutX="195.0" layoutY="178.0" prefHeight="28.0" prefWidth="288.0" text="Nombre del Producto:" textFill="WHITE" />
+            <Label id="Lprecio" layoutX="47.0" layoutY="315.0" text="Precio:" textFill="#fc6868" />
+            <Label id="Lcosto" layoutX="355.0" layoutY="315.0" text="Costo:" textFill="#88ec6c" />
+            <TextField fx:id="txt_Nombre" alignment="CENTER" layoutX="39.0" layoutY="212.0" prefHeight="40.0" prefWidth="600.0" />
+            <TextField id="TStock" fx:id="txt_Id" alignment="CENTER" layoutX="96.0" layoutY="86.0" prefHeight="34.0" prefWidth="157.0" promptText="id" />
+            <TextField id="TStock" fx:id="txt_Stock" alignment="CENTER" layoutX="452.0" layoutY="86.0" prefHeight="34.0" prefWidth="157.0" promptText="cantidad" />
+            <TextField id="TStock" fx:id="txt_Precio" alignment="CENTER" layoutX="153.0" layoutY="314.0" prefHeight="34.0" prefWidth="157.0" promptText="\$$" />
+            <TextField id="TStock" fx:id="txt_Costo" alignment="CENTER" layoutX="448.0" layoutY="314.0" prefHeight="34.0" prefWidth="157.0" promptText="\$$" />
+            <Button fx:id="btn_Guardar" layoutX="47.0" layoutY="424.0" mnemonicParsing="false" onAction="#guardarProducto" prefHeight="34.0" prefWidth="136.0" style="-fx-background-color: #93F9B9;" stylesheets="@../Recursos/Style2.css" text="Guardar">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btn_Actualizar" layoutX="250.0" layoutY="424.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="165.0" style="-fx-background-color: #F2DB66;" stylesheets="@../Recursos/Style2.css" text="Actualizar">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_Eliminar" layoutX="483.0" layoutY="424.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="136.0" style="-fx-background-color: #FF8888;" stylesheets="@../Recursos/Style2.css" text="Eliminar">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane prefHeight="64.0" prefWidth="665.0" style="-fx-background-color: #93F9B9;">
+         <children>
+            <Label id="Tproducto" alignment="CENTER" contentDisplay="CENTER" layoutX="214.0" styleClass="TItulo" stylesheets="@../Recursos/Style3.css" text="Productos" textAlignment="CENTER" textFill="#5d626b">
+               <font>
+                  <Font name="Consolas Bold" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

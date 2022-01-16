@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="559.0" prefWidth="972.0" style="-fx-background-color: #FAFAFF;" stylesheets="@../Recursos/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.InicioController">
+   <children>
+      <SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="540.0" prefWidth="970.0" style="-fx-border-width: 20px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <AnchorPane id="PanelMenu" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" prefWidth="970.0" style="-fx-background-color: #4EA696;">
+               <children>
+                  <Button id="btn_config" contentDisplay="GRAPHIC_ONLY" layoutX="31.0" layoutY="3.0" mnemonicParsing="false" stylesheets="@../Recursos/Style.css" text="Config" textFill="#dfff0f">
+                     <graphic>
+                        <ImageView id="imgconfig" fitHeight="62.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/configuraciones.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button id="BotonGuardar" fx:id="Btn_nuevo" alignment="TOP_CENTER" layoutX="664.0" layoutY="14.0" mnemonicParsing="false" onAction="#NuevoRegistro" prefHeight="44.0" prefWidth="193.0" stylesheets="@../Recursos/Style2.css" text="Nuevo" textAlignment="CENTER" AnchorPane.rightAnchor="37.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="-Infinity" prefHeight="401.0" prefWidth="970.0" style="-fx-background-color: #0E2226;">
+               <children>
+                  <TabPane id="Tabpanel" layoutY="-6.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="970.0" style="-fx-padding: 0;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab fx:id="btap_Registros" styleClass="Tabs" text="Registros">
+                           <content>
+                              <TableView fx:id="Tbl_Registros" minHeight="-Infinity" minWidth="200.0" prefHeight="363.0" prefWidth="970.0">
+                                <columns>
+                                  <TableColumn fx:id="Clm_IDRegistro" maxWidth="200.0" minWidth="50.0" prefWidth="97.0" styleClass="Columnas" text="ID" />
+                                  <TableColumn fx:id="Clm_Tipo" minWidth="100.0" prefWidth="169.0" styleClass="Columnas" text="Tipo" />
+                                    <TableColumn fx:id="Clm_Producto" minWidth="100.0" prefWidth="74.0" styleClass="Columnas" text="Producto" />
+                                    <TableColumn fx:id="Clm_Cantidad" minWidth="50.0" prefWidth="105.0" styleClass="Columnas" text="Cantidad" />
+                                    <TableColumn fx:id="Clm_Precio" minWidth="100.0" prefWidth="148.0" styleClass="Columnas" text="Precio" />
+                                    <TableColumn fx:id="Clm_Vendedor" minWidth="100.0" prefWidth="141.0" styleClass="Columnas" text="Vendedor" />
+                                    <TableColumn fx:id="Clm_Fecha" minWidth="50.0" prefWidth="179.0" styleClass="Columnas" text="Fecha" />
+                                </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </content>
+                        </Tab>
+                      <Tab fx:id="btap_Productos" styleClass="Tabs" text="Productos">
+                           <content>
+                              <TableView fx:id="tbl_Productos" prefHeight="200.0" prefWidth="200.0">
+                                <columns>
+                                  <TableColumn fx:id="clm_IdProducto" prefWidth="75.0" text="ID" />
+                                  <TableColumn fx:id="clm_nombreProducto" minWidth="100.0" prefWidth="270.0" text="Nombre" />
+                                    <TableColumn fx:id="clm_precioProducto" prefWidth="237.0" text="Precio" />
+                                    <TableColumn fx:id="clm_CostoProducto" prefWidth="241.0" text="Costo" />
+                                    <TableColumn fx:id="clm_stockProducto" prefWidth="147.0" text="Stock" />
+                                </columns>
+                              </TableView>
+                           </content></Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="91.0" prefWidth="970.0" style="-fx-background-color: #0E2226;">
+               <children>
+                  <Button fx:id="Btn_Productos" alignment="TOP_CENTER" layoutX="33.0" layoutY="5.0" mnemonicParsing="false" onAction="#NuevoProducto" prefHeight="50.0" prefWidth="179.0" stylesheets="@../Recursos/Style2.css" text="Productos" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/caja.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_CENTER" layoutX="257.0" layoutY="4.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="179.0" stylesheets="@../Recursos/Style.css" text="Vendedores" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/agente.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

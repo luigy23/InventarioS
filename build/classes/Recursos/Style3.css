@@ -1,0 +1,106 @@
+
+
+
+
+/*  AQUI VA EL STYLE DE PRODUCTOS */
+
+
+.button{
+
+
+-fx-font-family: Consolas;
+-fx-font-style: normal;
+-fx-font-weight: normal;
+-fx-font-size: 20px;
+-fx-line-height: 42px;
+
+
+}
+.button:hover{
+    
+    -fx-background-color: #ffffff ;
+    
+}
+
+
+
+
+
+
+TextField{
+
+    -fx-color: #E5FCF5 ;
+    -fx-text-fill: #E5FCF5;
+    -fx-font-family: consolas;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-border-style: solid;
+    -fx-border-color:#E5FCF5;
+    -fx-border-width: 3px;
+    -fx-border-radius: 0;
+    -fx-background-color: #00c58a1f;
+    -fx-background-radius: 0;
+    
+    
+    }
+
+
+    #TStock{
+
+        -fx-font-size: 16;
+
+    }
+
+.combo-box{
+    -fx-color: #E5FCF5 ;
+    -fx-text-fill: #E5FCF5;
+    
+    
+    
+    -fx-font-family: consolas;
+    -fx-font-size: 18;
+    
+    
+    -fx-border-style: solid;
+    -fx-border-color:#E5FCF5;
+    -fx-border-width: 0px 0px 4px 0px;
+
+    -fx-font-family: consolas;
+    -fx-font-size: 16;
+}
+
+
+#Tproducto{
+
+    -fx-font-family: consolas bold;
+    -fx-font-style: ita;
+    -fx-font-size: 48;
+}
+
+
+Label{
+
+
+    -fx-font-family: consolas;
+    -fx-font-size: 24;
+
+    -fx-color: #ffffff;
+
+}
+
+#Lcosto{
+
+-fx-font-family: Consolas;
+-fx-font-style: normal;
+-fx-font-weight: bold;
+-fx-color: #FC6868;
+}
+
+#Lprecio{
+
+    -fx-font-family: Consolas;
+    -fx-font-style: normal;
+    -fx-font-weight: bold;
+    -fx-color: #88EC6C;
+
+}
